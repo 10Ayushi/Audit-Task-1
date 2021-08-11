@@ -1,0 +1,41 @@
+th{
+    text-align:left;
+    
+
+}
+
+html,body{
+font-size: 20pt;
+background: linear-gradient(to right, #b92b27, #1565c0);
+background-size: cover;
+background-repeat: no-repeat;
+height: 130%;
+font-family: 'Numans', sans-serif;
+}
+
+
+
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  div {
+    text-align: center;
+    border-style: solid;
+    margin-left: 300px;
+    width:60%
+}
+#alignment{
+    margin-left: auto;
+    margin-right: auto;
+
+}

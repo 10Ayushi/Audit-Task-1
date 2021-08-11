@@ -1,0 +1,155 @@
+.header {
+  padding: 30px;                     /* some padding */
+  text-align: center;               /* center the text */
+  background: linear-gradient(#1abc9c, #ffffff);                                                          /* #1abc9c;green background */
+  color: black;                      /* white text color */
+}
+
+                                                 /* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+
+html,body{
+background: linear-gradient(to right, #b92b27, #1565c0);
+background-size: cover;
+background-repeat: no-repeat;
+height: 130%;
+font-family: 'Numans', sans-serif;
+}
+
+
+.navbar {
+  overflow: auto;                     /* Hide overflow */
+  background-color: #000000;        /* Dark background color */
+}
+
+                                                                     /* Style the navigation bar links */
+.navbar a {
+  float: left;                                                  /* Make sure that the links stay side-by-side */
+  display: block;                                            /* Change the display to block, for responsive reasons (see below) */
+  color: white;                                              /* White text color */
+  text-align: center;                                     /* Center the text */
+  padding: 14px 20px;                                 /* Add some padding */
+  text-decoration: none;                             /* Remove underline */
+}
+
+                                                        /* Right-aligned link */
+.navbar a.right {
+  float: right;                                    /* Float a link to the right */
+}
+
+                                                         /* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd;                  /* Grey background color */
+  color: black;                                    /* Black text color */
+}
+* {
+  box-sizing: border-box;
+}
+
+
+                                                                                /* Create two unequal columns that sits next to each other */
+                                                                                 /* Sidebar/left column */
+.side {
+  flex: 30%;                                                                /* Set the width of the sidebar */
+  background-color: #f1f1f1;                                       /* Grey background color */
+  padding: 20px;                                                         /* Some padding */
+}
+
+                                                                        /* Main column */
+.main {
+  flex: 70%;                                                     /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+Then add media queries to make the layout responsive. This will make sure that your website looks good on all devices (desktops, laptops, tablets and phones). Resize the browser window to see the result.
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.dishIn{
+display:Inline-block;
+width:30vw;
+margin-left:25vw;
+margin-top:10vh;
+height:30px;
+font-size:30px;
+}
+
+.srhbtn{
+diplay:inline-block;
+width:20vw;
+margin-left:15vw;
+background:#FFA500;
+font-size:20px;
+}
+
+
+
+h3{
+background:#FFE4C4;
+color:#000000;
+}
+
+
+.dish{
+margin-top:10vh;
+}
+
+.revi{
+margin-top:5vh;
+}
+
+.img{
+display: inline-block;
+width:30%;
+height:20%;
+object-fit: cover;
+}
+.dish h4{
+text-align:left;
+font-style:italic;
+color:#ffffff;
+}
+.container{
+display: block;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: #1abc9c;               /* #ffd800*/
+    width: 150%;
+    text-align: center;
+    left: 0;
+    background-image: url(/Content/SiteImages/logosmall.png);
+    background-repeat: no-repeat;
+    height: 110px;
+    border-top: 3px solid #082603;
+}
+
+    .footer p {
+        position: absolute;
+        top: 0;
+        left: 3%;
+       /* margin-right: -50%;*/
+        transform: translate(-10%, -10%);
+        color: #082603;
+        font-size: 105%;
+        font-family: 'Baskerville Old Face'
+    }
